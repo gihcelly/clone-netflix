@@ -1,0 +1,58 @@
+:root{ /* declarando as variáveis*/
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+*{                  /*reset*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color:var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header .logo{
+    margin-right: 40px;
+    margin-left: 5px;
+    color: var(--vermelho);
+    font: 'Arial Black', times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*Muda a cor quando o mouse está em cima*/
+    color: #fff;
+
+}
+/*série principal*/
+
+main .serie-principal{
+    font-size: 16px;
+    margin-top: 50px;
+    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/fundo-kotaro.jpg');
+    background-size: cover;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: column;/*centraliza verticalmente*/
+    justify-content: center;
+    align-items: flex-start;/*faz com que os elementos comecem da esquerda para direita*/
+}
