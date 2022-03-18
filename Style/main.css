@@ -55,4 +55,36 @@ main .serie-principal{
     flex-direction: column;/*centraliza verticalmente*/
     justify-content: center;
     align-items: flex-start;/*faz com que os elementos comecem da esquerda para direita*/
+
+}
+
+.serie-principal .descricao{
+    margin-top: 3%;
+    margin-bottom: 40px;
+
+}
+
+.serie-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.serie-principal .botao{
+    background-color: rgba(0,0,0,.50);
+    border: none; /*tira a borda dos botões*/
+    color: white;
+    
+    padding: 15px 30px; /*primeiro valor:encima e embaixo segundo valor:esquerda e direita*/
+    margin-right: 15px;
+    font-size: 12px;
+    
+    cursor: pointer; /* faz aparecer a mãozinha quando passa em cima*/
+    transition: .3s ease all;
+    border-radius: 5px; /* deixa a borda arredondada*/
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
 }
