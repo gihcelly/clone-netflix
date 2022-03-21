@@ -84,7 +84,11 @@ main .serie-principal{
     border-radius: 5px; /* deixa a borda arredondada*/
 }
 
-.botao:hover{
+.botao:hover{ /* quando passa o mouse em cima inverte as coires*/
     background-color: white;
     color: black;
+}
+
+.botao i{
+    margin-right: 10px;
 }
