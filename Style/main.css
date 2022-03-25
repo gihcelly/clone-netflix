@@ -16,98 +16,112 @@ body{
     color: white;
 }
 
-header .container{
-    display: flex;
+header img{
+    margin-right: 30px;
+    margin-left: 50px;
+    margin-top: 10;
+    margin-bottom: 20;
+}
+
+.navbar {
+    background-image:linear-gradient(to top,transparent 0%, black 80%);   
+}
+
+nav .navbar{
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    text-decoration:none;
+    color:#AAA;
+    justify-content: flex-start;
 }
 
-header .logo{
-    margin-right: 40px;
-    margin-left: 5px;
-    color: var(--vermelho);
-    font: 'Arial Black', times;
-    font-size: 40px;
 }
-
-header nav a{
-    text-decoration: none;
-    color: #AAA;
-    margin-right: 10px;
-}
-
 header nav a:hover{ /*Muda a cor quando o mouse está em cima*/
-    color: #fff;
-
+    color:rgba(180, 20, 113, 0.945);
 }
+
 /*série principal*/
-
-main .serie-principal{
-    font-size: 16px;
-    margin-top: 50px;
-    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/fundo-kotaro.jpg');
-    
+.serie-principal{
+    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/matrix.jpg);
     background-size: cover;
-    height: 400px;
-    
+    background-position: top;
     display: flex;
-    flex-direction: column;/*centraliza verticalmente*/
-    justify-content: center;
-    align-items: flex-start;/*faz com que os elementos comecem da esquerda para direita*/
-
 }
 
-.serie-principal .descricao{
-    margin-top: 10px;
-    margin-bottom: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}
-
-.serie-principal .titulo{
-    margin-top: 15%;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.botao{
-    background-color: rgba(0,0,0,.50);
-    border: none; /*tira a borda dos botões*/
-    color: white;
+main .flex-container{
+    display: flex;
+    flex-direction:column;/*centraliza verticalmente*/
+    justify-content:flex-start;
+    align-items: stretch;/*faz com que os elementos comecem da esquerda para direita*/
     
-    padding: 15px 30px; /*primeiro valor:encima e embaixo segundo valor:esquerda e direita*/
+    margin-top: 200px;
+    margin-left: 50px;
+
+}
+.serie-principal .descricao{
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+.botoes .botaoplay{
+    background-color: white;
+    border: none; 
+    color:black;
+    
+    padding: 10px 20px; 
     margin-right: 15px;
-    font-size: 12px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: bolder;
+    
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+.botoes .botaoplay:hover{ /* quando passa o mouse em cima inverte as coires*/
+    background-color:rgba(211, 211, 211, 0.932);
+    color:black;
+}
+.botoes .botaoinfo{
+    background-color: rgba(255, 255, 255, 0.644);
+    border: none; /*tira a borda dos botões*/
+    color:white;
+    
+    padding: 10px 20px; /*primeiro valor:encima e embaixo segundo valor:esquerda e direita*/
+    margin-right: 15px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: bolder;
     
     cursor: pointer; /* faz aparecer a mãozinha quando passa em cima*/
     transition: .3s ease all;
     border-radius: 5px; /* deixa a borda arredondada*/
 }
-
-.botao:hover{ /* quando passa o mouse em cima inverte as coires*/
-    background-color: white;
-    color: black;
+.botoes .botaoinfo:hover{ /* quando passa o mouse em cima inverte as coires*/
+    background-color:rgba(255, 255, 255, 0.479);
+    color:white;
 }
-
-.botao i{
-    margin-right: 10px;
+.botoes i{
+    margin-right: 12px;
 }
-.container{
-    margin-left: 20px;
+.serie-principal h3{
+ background-color: #e50914;
 }
-
-.serie-principal .container{   
-    width: 70%;
-}
-
 .box-filme{
     height: 100%;
-    width: 100%;
-    display: block;
+    display: flex;
     cursor: pointer;
+    align-items: stretch;
+
+}
+.carrosel-filmes{
+background-color: white;
 }
 
-.carrosel-filmes{
-    margin-top: 15px;
+main .listas{   
+    margin-left: 50px;
+    margin: top 10px;
 }
+
