@@ -6,7 +6,6 @@
 *{ /*reset*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /*elementos base*/
@@ -14,83 +13,135 @@ body{
     background-color:var(--preto);
     font-family: 'Times New Roman', Times, serif;
     color: white;
+    min-width:100vw;
+    min-height: 100vh;
+    
 }
 
-header img{
-    margin-right: 30px;
-    margin-left: 50px;
-    margin-top: 10;
-    margin-bottom: 20;
+header{
+    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(/img/matrix.jpg);
+    background-size: cover;
+    width: 100vw;
 }
 
-.navbar {
-    background-image:linear-gradient(to top,transparent 0%, black 80%);   
-}
-
-nav .navbar{
-    flex-direction: row;
+.menu-navegacao{
+    background-image:linear-gradient(to top,transparent 20%, black 80%);
     text-decoration:none;
-    color:#AAA;
-    justify-content: flex-start;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    height: 6vh;
+    margin-bottom: 200px;
 }
 
+.menu-navegacao img{
+    margin-right: 2vw;
+    margin-left: 4vw;
+
 }
-header nav a:hover{ /*Muda a cor quando o mouse está em cima*/
-    color:rgba(180, 20, 113, 0.945);
+.menu-navegacao ul{
+    font-size: 1rem;
+    flex-direction: row;
+    flex-grow: 2;
+
+}
+
+.menu-navegacao a{
+    color: white;
+    margin-left: 15px;  
+}
+
+.menu-navegacao a:hover{
+    color: #aaa;
+}
+
+.menu-navegacao form{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border: none;    
+}
+
+form input{
+    min-width: 2vw;
+    
+}
+form button{
+    
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding-right: 1vw;
+    
 }
 
 /*série principal*/
+
 .serie-principal{
-    background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/matrix.jpg);
     background-size: cover;
-    background-position: top;
-    display: flex;
+    background-position:top;
+    display: block;  
+    width: 100%;
+
 }
 
-main .flex-container{
-    display: flex;
-    flex-direction:column;/*centraliza verticalmente*/
-    justify-content:flex-start;
-    align-items: stretch;/*faz com que os elementos comecem da esquerda para direita*/
+.serie-principal img{
     
-    margin-top: 200px;
-    margin-left: 50px;
+    padding-left:4vw ;
+    margin-bottom: 5vh;
+    min-width: 5vw;
+
 }
 .serie-principal .descricao{
-    width: 700px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    width: 50vw;
+    margin-bottom: 60px;
+    padding-left: 4vw;
     
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
-.botoes .botaoplay{
+ .serie-principal .botoes{
+    max-width: 70vw;
+    margin-left: 4vw;
+}
+
+.serie-principal .botoes .botaoplay{
     background-color: white;
     border: none; 
-    color:black;
+    border-radius: 5px;
     
-    padding: 10px 20px; 
-    margin-right: 15px;
-    margin-bottom: 100px;
+    color:black;
     font-size: 18px;
     font-weight: bolder;
     
+    padding: 10px 20px; 
+    
+    margin-right: 15px;
+    margin-bottom: 120px;
+
     cursor: pointer;
     transition: .3s ease all;
-    border-radius: 5px;
+    
 }
-.botoes .botaoplay:hover{ /* quando passa o mouse em cima inverte as coires*/
+
+.serie-principal.botoes .botaoplay:hover{ /* quando passa o mouse em cima inverte as cores*/
     background-color:rgba(211, 211, 211, 0.932);
     color:black;
 }
-.botoes .botaoinfo{
+
+.serie-principal .botoes .botaoinfo{
     background-color: rgba(255, 255, 255, 0.644);
     border: none; /*tira a borda dos botões*/
     color:white;
     
-    padding: 10px 20px; /*primeiro valor:encima e embaixo segundo valor:esquerda e direita*/
+    padding: 10px 20px; /*primeiro valor:em cima e embaixo segundo valor:esquerda e direita*/
     margin-right: 15px;
-    margin-bottom: 100px;
+    margin-bottom: 120px;
     font-size: 18px;
     font-weight: bolder;
     
@@ -98,42 +149,39 @@ main .flex-container{
     transition: .3s ease all;
     border-radius: 5px; /* deixa a borda arredondada*/
 }
-.botoes .botaoinfo:hover{ /* quando passa o mouse em cima inverte as coires*/
+.serie-principal .botoes .botaoinfo:hover{ /* quando passa o mouse em cima inverte as coires*/
     background-color:rgba(255, 255, 255, 0.479);
     color:white;
+}
+
+h1{
+    font-size: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 .botoes i{
     margin-right: 12px;
 }
-main h3{
- color: white;
- margin-bottom: 20px;
+
+.continuar-assistindo{
+    background-image:linear-gradient(to bottom,transparent 10%, #141414 50%);
+    width: 100vw;
 }
-section h3{
+
+.slider{
+    background-color:#141414;
+}
+
+body h2{
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
-    margin-bottom: 20px;
+    font-size: 1.75rem;
+    
+    margin-left:4vw;
+    margin-bottom: 1rem;
 }
 
-.box-filme{
-    height: 100%;
-    display: flex;
-    cursor: pointer;
-    align-items: stretch;
-}
-.carrosel-filmes{
-background-color: white;
-}
-
-.listas{
-    background-color: #141414;
-}
-.flex-container {
-    margin-left: 50px;
-    margin: top 10px;
-    padding-bottom:0%
-}
-
-.listas .h3{
-    color: white;
+.owl-carousel{
+    margin-left: 4vw;
 }
 

@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/main.css">
-
-    <!--Responsifidade-->
-    <link rel="stylesheet" href="Style/responsive.css">
-
     <title>NETFLIX CLONE</title>
+
+    <link rel="stylesheet" href="Style/main.css">
 
     <!-- olw css -->
     <link rel="stylesheet" href="/Style/owl/owl.carousel.min.css">
@@ -23,270 +20,268 @@
 
 <body>
     <header>
-            <nav>
-                <nav class="navbar navbar-expand-lg navbar-dark">
-                    <div class="navbar fixed-top">
-                        <img src="/img/netflix.png" width="111" height="30" alt="logo-netflix">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="#">Séries</a>
-                            </li>
-                            <a class="nav-link active" href="#">Filmes</a>
-                            </li>
-                            </li>
-                            <a class="nav-link active" href="#">Bombando</a>
-                            </li>
-                            </li>
-                            <a class="nav-link active" href="#">Minha lista</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </nav>
-    </header>
-    <main class="serie-principal">   
-            <div class="flex-container">
-                <img src="/img/nomematrix.png" width ="447" height ="80"alt="Logo">
-                <p class="descricao">Em um mundo de duas realidades — a vida cotidiana e o que está por trás dela —,
-                    Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma
-                    ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais
-                    perigosa do que nunca.</p>
-                <div class="botoes">
-                    <button type="button" class="btn btn-secondary botaoplay">
-                        <i class="fa-solid fa-play"></i>
-                        Assistir</button>
-                    <button type="button" class="btn btn-secondary botaoinfo">
-                        <i class="fa-solid fa-circle-info"></i>
-                        Mais informações</button>
+        <div class="menu-navegacao">
+            <img src="/img/netflix.png" width="74" height="20" alt="logo-netflix">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Séries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Filmes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Bombando</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Minha lista</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control" type="search" placeholder="Pesquisar">
+                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </div>
+        <div class="serie-principal">
+            <img src="/img/nomematrix.png" width="447" height="80" alt="Logo">
+            <p class="descricao">Em um mundo de duas realidades — a vida cotidiana e o que está por trás dela —,
+                Thomas Anderson terá que escolher seguir o coelho branco mais uma vez. A escolha, embora seja uma
+                ilusão, ainda é a única maneira de entrar ou sair da Matrix, que é mais forte, mais segura e mais
+                perigosa do que nunca.</p>
+            <div class="botoes">
+                <button type="button" class="btn btn-secondary botaoplay">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir</button>
+                <button type="button" class="btn btn-secondary botaoinfo">
+                    <i class="fa-solid fa-circle-info"></i>
+                    Mais informações</button>
+            </div>
+        </div>
+        <div class="continuar-assistindo">
+            <h2>Continuar assistindo como Fulano</h2>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini1.jpg" alt="">
+                    </h4>
                 </div>
-                <div class="continuar-assistindo">
-                    <h3>Continuar assistindo como Fulano</h3>
-                    <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini1.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini2.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini3.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini4.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini5.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini6.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini7.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini8.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini9.jpg" alt="">
-                            </h4>
-                        </div>
-                        <div class="item">
-                            <h4>
-                                <img class="box-filme" src="/img/mini10.jpg" alt="">
-                            </h4>
-                        </div>
-                    </div>                  
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini2.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini3.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini4.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini5.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini6.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini7.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini8.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini9.jpg" alt="">
+                    </h4>
+                </div>
+                <div class="item">
+                    <h4>
+                        <img class="box-filme" src="/img/mini10.jpg" alt="">
+                    </h4>
                 </div>
             </div>
-    </main>
-    <section class="listas">
-        <div class=" flex-container">
-            <h3>Minha lista</h3>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini1.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini2.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini3.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini4.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini5.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini6.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini7.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini8.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini9.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini10.jpg" alt="">
-                    </h4>
-                </div>
-            </div>                  
+
         </div>
-        <div class=" flex-container">
-            <h3>Em alta</h3>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini1.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini2.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini3.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini4.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini5.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini6.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini7.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini8.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini9.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini10.jpg" alt="">
-                    </h4>
-                </div>
-            </div>                  
+    </header>
+    <div class="slider">
+        <h2>Minha lista</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini1.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini2.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini3.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini4.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini5.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini6.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini7.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini8.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini9.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini10.jpg" alt="">
+                </h4>
+            </div>
         </div>
-        <div class=" flex-container">
-            <h3>Populares na Netflix</h3>
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini1.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini2.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini3.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini4.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini5.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini6.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini7.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini8.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini9.jpg" alt="">
-                    </h4>
-                </div>
-                <div class="item">
-                    <h4>
-                        <img class="box-filme" src="/img/mini10.jpg" alt="">
-                    </h4>
-                </div>
-            </div>                  
+    </div>
+    <div class="slider">
+        <h2>Em alta</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini1.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini2.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini3.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini4.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini5.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini6.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini7.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini8.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini9.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini10.jpg" alt="">
+                </h4>
+            </div>
         </div>
-    </section>
-    
+    </div>
+
+    <div class="slider">
+        <h2>Populares na Netflix</h2>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini1.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini2.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini3.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini4.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini5.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini6.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini7.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini8.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini9.jpg" alt="">
+                </h4>
+            </div>
+            <div class="item">
+                <h4>
+                    <img class="box-filme" src="/img/mini10.jpg" alt="">
+                </h4>
+            </div>
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/0b7e3ecd54.js" crossorigin="anonymous"></script>
     <script src="/Js/owl/jquery.min.js"></script>

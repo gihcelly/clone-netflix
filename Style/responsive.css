@@ -1,17 +1,7 @@
-@media screen and (max-width:556px) {
-    header .container{
+@media only screen and (max-width:994px) {
+    body .navbar{
         display: flex;
         flex-direction: column;
-    }
-}
-
-.botoes .botao{
-    margin-top: 5px;
-    width: 250px;
-}
-
-@media screen and (min-width:1000px) {
-    .descricao{
-        width: 50%;
-    }
+        align-items: center;
+    } 
 }
