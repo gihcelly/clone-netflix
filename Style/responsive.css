@@ -1,7 +1,22 @@
-@media only screen and (max-width:994px) {
-    body .navbar{
+@media screen and (max-width:737px) {
+    header .menu-navegacao{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        margin-bottom: 5vh;
     } 
+}
+
+@media  screen and (max-width:737px) {
+    header img{
+        max-width:90vw;
+        height: auto;
+    }
+}
+
+@media  screen and (max-width:737px) {
+    .serie-principal .descricao{
+        width: 100vw;
+        padding: 4vw;
+        font-size: 1rem;
+    }
 }
