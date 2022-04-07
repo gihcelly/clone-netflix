@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-/*elementos base*/
 html, body{
-    margin: 0;
+    max-width: 100vw;
 }
 
 header{
     background-image:linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)), url(/img/matrix.jpg);
-    background-size: auto;
+    background-size: cover;
 }
 
 .menu-navegacao{
@@ -22,7 +21,8 @@ header{
     flex-direction: row;
     align-items: center;
     
-    margin-bottom: 30vh;    
+    margin-bottom: 30vh; 
+    min-height: 6vh;   
 }
 
 .menu-navegacao img{
@@ -61,19 +61,21 @@ form button{
     border: none;
 
     margin-left: 1vw;
-    margin-right: 1vw;
+    padding-right: 1vw;
 }
 
 /*série principal*/
 
+.serie-principal{
+    max-width: 70vw;
+}
 
 .serie-principal img{
     padding-left:4vw ;
     margin-bottom: 5vh;
-    min-width: 5vw;
 }
 .serie-principal .descricao{
-    width: 50vw;
+    /* width: 50vw; */
     margin-bottom: 60px;
     padding-left: 4vw;
     
@@ -82,13 +84,15 @@ form button{
     font-size: 1.5rem;
 }
  .serie-principal .botoes{
-    max-height: min-content;
-    margin-left: 4vw;
+    max-width: 70vw;
+    padding-left: 4vw;
     margin-bottom: 10vh;
 
     display: flex;
     flex-direction: row;
     align-items: center; 
+
+    font-size: large;
 }
 
 .serie-principal .botoes .botaoplay{
@@ -97,7 +101,7 @@ form button{
     border-radius: 5px;
     
     color:black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bolder;
     
     padding: 10px 20px; 
@@ -107,37 +111,33 @@ form button{
     transition: .3s ease all;
 }
 
-.serie-principal.botoes .botaoplay:hover{ /* quando passa o mouse em cima inverte as cores*/
-    background-color:rgba(211, 211, 211, 0.932);
-    color:black;
-}
-
 .serie-principal .botoes .botaoinfo{
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: rgba(153, 153, 153, 0.571);
     border: none; /*tira a borda dos botões*/
-    color:white;
     
     padding: 10px 20px; /*primeiro valor:em cima e embaixo segundo valor:esquerda e direita*/
-    margin-right: 15px;
-    font-size: 18px;
+    
+    color:white;
+    font-size: 20px;
     font-weight: bolder;
     
     cursor: pointer; /* faz aparecer a mãozinha quando passa em cima*/
     transition: .3s ease all;
     border-radius: 5px; /* deixa a borda arredondada*/
 }
-.serie-principal .botoes .botaoinfo:hover{ /* quando passa o mouse em cima inverte as coires*/
-    background-color:rgba(255, 255, 255, 0.479);
-    color:white;
+
+
+.serie-principal .botoes .botaoplay:hover{ /* quando passa o mouse em cima inverte as cores*/
+    background-color:rgb(178, 178, 178);
 }
 
-.botoes i{
-    margin-right: 12px;
+.serie-principal .botoes .botaoinfo:hover{ /* quando passa o mouse em cima inverte as coires*/
+    background-color:rgba(153, 153, 153, 0.284);
+    
 }
 
 .continuar-assistindo{
     background-image:linear-gradient(to bottom,transparent 10%, #141414 50%);
-    width: 100vw;
 }
 
 .slider{
@@ -147,13 +147,14 @@ form button{
 body h2{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     
-    margin-left:4vw;
+    padding-left: 4vw;
     margin-bottom: 1rem;
 }
 
 .owl-carousel{
-    margin-left: 4vw;
+    padding-left: 4vw;
+
 }
 
