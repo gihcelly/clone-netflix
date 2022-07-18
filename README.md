@@ -1,4 +1,4 @@
-Este projeto foi feito como desafio para o bootamp do Carrefour em parceiria com a Digital inovation one.
+Este projeto foi feito como desafio para o bootcamp do Carrefour em parceiria com a Digital inovation one.
 
 Nele eu exerceitei o uso do bootstrap, jquery e a responsividade da página.
 
